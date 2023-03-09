@@ -1,0 +1,26 @@
+﻿.dark-mode {
+    color: var(--primaryText-dark) !important;
+    background-image: url("/images/bg_square_mobile_dark.png") !important;
+}
+
+    .dark-mode .main-landing-btn,
+    .dark-mode .header-banner,
+    .dark-mode .footer-banner,
+    .dark-mode .header-nav,
+    .dark-mode .header-banner-logo {
+        background: var(--primary-dark) !important;
+    }
+
+    .dark-mode .header-nav-links li:hover {
+        background: var(--tertiary-dark) !important;
+    }
+
+    .dark-mode .mobile-icons {
+        color: var(--secondary-dark) !important
+    }
+    .dark-mode .header-banner-logo {
+        color: var(--secondary-dark)
+    }
+        .dark-mode .header-banner-logo a {
+            outline: 1px solid var(--secondary-dark);
+        }

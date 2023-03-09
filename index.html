@@ -1,7 +1,172 @@
-<!DOCTYPE html>
-<html>
-<body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages. </p>
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TODO: Enter Title -->
+    <title>vcortese</title>
+
+    <!-- TODO: Enter actual link-->
+    <link rel="canonical" href="https://www.vcortese.github.io/">
+
+    <!-- TODO: Edit page info -->
+    <meta name="description" content="My personal site containing info and tools.">
+    <meta name="keywords" content="Vincent Cortese, Devlog, Economics, Investing, Finance, Gaming, Video Games, Programming, Coding">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#000000" />
+
+    <!--TODO: Enter Social Media Display-->
+    <meta property="og:title" content="vcortese" />
+    <meta property="og:description" content="My personal site containing info and tools." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.vcortese.github.io/" />
+    <meta property="og:image" content="/images/social.jpg" />
+    <meta property="og:image:secure_url" content="/images/social.jpg" />
+
+    <!-- TODO: Edit Favicon -->
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+
+    <!--Favicons-->
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/images/apple_touch_icon_180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_16x16.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/favicon.png">
+
+    <!--<link rel="manifest" href="/site.webmanifest">       LEARN MORE         -->
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap">
+    <link rel="stylesheet" type="text/css" href="/css/root.css" />
+    <link rel="stylesheet" type="text/css" href="/css/design.css" />
+    <link rel="stylesheet" type="text/css" href="/css/dark-mode.css" />
+
+    <!-- Only if jQuery needed -->
+    <script type="text/javascript" src="/js/jquery-3.6.1.min.js"></script>
+    <script async type="text/javascript" src="/js/nav.js"></script>
+    <script async type="text/javascript" src="/js/dark-mode.js"></script>
+
+    <!-- On DOM load -->
+    <script>
+        $(document).ready(function () {
+            nav.initNavModule($('#body'))
+            darkMode.initDarkModeModule($('#body'))
+        })
+    </script>
+
+</head>
+<body id="body">
+
+    <!--Screen reader skip main nav-->
+    <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+
+    <!-- ============================================ -->
+    <!--                    Header                    -->
+    <!-- ============================================ -->
+    <header id="header" class="header">
+        <section class="header-banner">
+            <div class="header-banner-logo">
+                <a aria-label="click to go to home page" href="/index.html">
+                    <!-- TODO: Edit logo image, width can change for landscape image -->
+                    <!--<img aria-hidden="true" src="/images/webtempLogo_256x256.png" decoding="async" alt="logo" height="64" width="64" />-->
+                    LOGO
+                </a>
+            </div>
+            <div class="header-banner-theme">
+                <button id="btnDarkMode" class="button-resetcss material-icons mobile-icons" aria-label="click to change to dark theme" type="button">dark_mode</button>
+                <button id="btnLightMode" class="button-resetcss material-icons mobile-icons" aria-label="click to change to light theme" type="button">light_mode</button>
+            </div>
+            <div class="header-banner-hamburger">
+                <button id="btnNavOpen" class="button-resetcss material-icons mobile-icons" aria-label="click to open menu" type="button">menu</button>
+                <button id="btnNavClose" class="button-resetcss material-icons mobile-icons" aria-label="click to close menu" type="button">close</button>
+            </div>
+        </section>
+        <section id="headerNav" class="header-nav close">
+            <nav>
+                <ul class="header-nav-links">
+                    <li><a class="active" href="/index.html">Home</a>
+                    <li><a href="/index.html">Services</a></li>
+                    <li><a href="/index.html">Testimonials</a></li>
+                    <li><a href="/index.html">About</a></li>
+                    <li><a href="/index.html">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+
+    <!-- ============================================ -->
+    <!--                  Main Content                -->
+    <!-- ============================================ -->
+    <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. -->
+
+
+    <main id="main" class="main">
+        <section class="main-landing">
+            <h1>Company Name and Details</h1>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h2>
+            <a class="main-landing-btn" aria-label="click to call" href="tel:123-456-7890">Call</a>
+        </section>
+        <section class="main-info">
+            <h2><span>WHAT</span> WE DO</h2>
+            <div class="main-info-divider"></div>
+            <div class="main-info-card">
+                <svg><circle cx="32" cy="32" r="30" stroke=var(--primary) stroke-width="4" fill=var(--tertiary) /></svg>
+                <h3>First content item</h3>
+                <!--<hr />-->
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+            </div>
+            <div class="main-info-card">
+                <svg><circle cx="32" cy="32" r="30" stroke=var(--primary) stroke-width="4" fill=var(--tertiary) /></svg>
+                <h3>Second content item</h3>
+                <!--<hr />-->
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+            </div>
+            <div class="main-info-card">
+                <svg><circle cx="32" cy="32" r="30" stroke=var(--primary) stroke-width="4" fill=var(--tertiary) /></svg>
+                <h3>Third content item</h3>
+                <!--<hr />-->
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- ============================================ -->
+    <!--                    Footer                    -->
+    <!-- ============================================ -->
+    <footer class="footer">
+        <section class="footer-banner">
+            <div class="footer-banner-item">
+                <h3>Contact</h3>
+                <hr />
+                <ul>
+                    <li><a href="">name@company.org</a></li>
+                    <li><a href="">123-456-7890</a></li>
+                </ul>
+            </div>
+            <div class="footer-banner-item">
+                <h3>Navigation</h3>
+                <hr />
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Testimonials</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-banner-item">
+                <h3>Services</h3>
+                <hr />
+                <ul>
+                    <li><a href="">Service 1</a></li>
+                    <li><a href="">Service 2</a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+
 </body>
 </html>

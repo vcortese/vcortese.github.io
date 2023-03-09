@@ -1,0 +1,80 @@
+﻿/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+ol, ul, dl {list-style-position: inside;}
+a {text-decoration: none;}
+    a:link, a:visited {color: inherit}
+    a:hover {text-decoration: underline;}
+/* Reset */
+
+/***** Set root, font, and rem size *****/
+/****************************************/
+
+:root {
+    /* EasternBlue*/
+    --primary: #57acd9; /* Middle Light */
+    --secondary: #f2f9fd; /* Lightest */
+    --tertiary: #c5e1f2; /* Lighter */
+    --primary-dark: #257fb6; /* Middle Dark */
+    --secondary-dark: #1c435e; /* Darkest */
+    --tertiary-dark: #1d5e87; /* Darker */
+
+    --primaryText: #1d5e87;
+    --primaryText-dark: #c5e1f2;
+}
+
+
+html {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+}
+body {
+    color: var(--primaryText);
+    /*background: white;*/
+    background-image: url("/images/bg_square_mobile.png");
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1 {font-size:2.25rem}
+h2 {font-size:1.1rem}
+h3 {font-size:1.25rem}
+h4 {font-size:1.1rem}
+h5 {font-size:1rem}
+h6 {font-size:1rem}
+
+.skip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -100;
+}
+
+.button-resetcss {
+    background-color: inherit;
+    border-width: inherit;
+    border-style: inherit;
+    border-color: inherit;
+    border-image: inherit;
+}
+
+.close {
+    display:none !important;
+}
+
+.active {
+    font-weight:700 !important;
+    text-decoration: underline !important;
+}
+
+.mobile-icons {
+    font-size: 2rem;
+    color:;
+}
