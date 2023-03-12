@@ -177,7 +177,7 @@
     .main-info h2 {font-size:1.5rem}
     .main-info h2 span {color:var(--primary)}
 
-.main-info-divider {
+.main-divider {
     width: 50%;
     border-bottom: 2px dashed var(--primary)
 }
@@ -205,6 +205,25 @@
     .main-info-card h3 span {color:var(--tertiary)}
     .main-info-card hr {width:66%;}
     .main-info-card h4 { font-weight:500}
+
+
+.main-rates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-content: space-around;
+    margin: 0 0 5rem 0;
+    gap: .5rem;
+}
+    .main-rates h2 {font-size:1.5rem}
+    .main-rates h2 span {color:var(--primary)}
+    .main-rates-card div {border: 1px solid black;}
+
+        .main-rates-card h3,
+        .main-rates-card h4 {
+            display:inline-block;
+        }
 
 
 /****************** Main End ******************/
