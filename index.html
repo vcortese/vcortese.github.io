@@ -10,11 +10,11 @@
     <title>ParkMasterV - Home</title>
 
     <!-- TODO: Enter actual link-->
-    <link rel="canonical" href="https://www.vcortese.github.io/">
+    <link rel="canonical" href="https://www.parkmasterv.github.io/">
 
     <!-- TODO: Edit page info -->
     <meta name="description" content="My personal site containing info and tools.">
-    <meta name="keywords" content="Vincent Cortese, Devlog, Economics, Investing, Finance, Gaming, Video Games, Programming, Coding">
+    <meta name="keywords" content="ParkMasterV, Vincent Cortese, Devlog, Economics, Investing, Finance, Gaming, Video Games, Programming, Coding">
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="theme-color" content="#000000" />
 
@@ -22,7 +22,7 @@
     <meta property="og:title" content="vcortese" />
     <meta property="og:description" content="My personal site containing info and tools." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.vcortese.github.io/" />
+    <meta property="og:url" content="https://www.parkmasterv.github.io/" />
     <meta property="og:image" content="/images/social.jpg" />
     <meta property="og:image:secure_url" content="/images/social.jpg" />
 
@@ -48,11 +48,13 @@
     <script type="text/javascript" src="/js/master.js"></script>
     <script async type="text/javascript" src="/js/nav.js"></script>
     <script async type="text/javascript" src="/js/dark-mode.js"></script>
+    <script async type="text/javascript" src="/js/index.js"></script>
 
     <!-- On DOM load -->
     <script>
         $(document).ready(function () {
             master.initMasterModule($('#body'))
+            index.initIndexModule($('#body'))
         })
     </script>
 
@@ -87,7 +89,7 @@
             <div class="main-divider"></div>
             <div class="main-info-card">
                 <svg><circle cx="32" cy="32" r="30" stroke=var(--primary) stroke-width="4" fill=var(--tertiary) /></svg>
-                <h3>Personal Finance</h3>
+                <h3><a href="/finance.html">Personal Finance</a></h3>
                 <h4>Tips for those looking to get a hold of finances, live below means, and grow the rest!</h4>
             </div>
             <div class="main-info-card">
@@ -106,23 +108,23 @@
             <div class="main-divider"></div>
             <div class="main-rates-card">
                 <h4>FED:</h4>
-                <h4>4.75%</h4>
+                <h4 id="fedRate">4.50%</h4>
             </div>
             <div class="main-rates-card">
-                <h4>1 Year T.:</h4>
-                <h4>5.05%</h4>
+                <h4>1 Year Treasury:</h4>
+                <h4 id="oneRate">4.39%</h4>
             </div>
             <div class="main-rates-card">
-                <h4>10 Year T.:</h4>
-                <h4>4.10%</h4>
+                <h4>10 Year Treasury:</h4>
+                <h4 id="tenRate">3.60%</h4>
             </div>
             <div class="main-rates-card">
                 <h4>HYSA:</h4>
-                <h4>3.65%</h4>
+                <h4 id="hysaRate">3.50%</h4>
             </div>
             <div class="main-rates-card">
                 <h4>Money Market:</h4>
-                <h4>4.25%</h4>
+                <h4 id="mmRate">4.10%</h4>
             </div>
         </section>
     </main>
