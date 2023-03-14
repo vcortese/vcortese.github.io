@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- TODO: Enter Title -->
-    <title>vcortese - Finance</title>
+    <title>ParkMasterV - Finance</title>
 
     <!-- TODO: Enter actual link-->
     <link rel="canonical" href="https://www.vcortese.github.io/">
@@ -19,7 +19,7 @@
     <meta name="theme-color" content="#000000" />
 
     <!--TODO: Enter Social Media Display-->
-    <meta property="og:title" content="vcortese" />
+    <meta property="og:title" content="ParkMasterV" />
     <meta property="og:description" content="My personal site containing info and tools." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.vcortese.github.io/" />
@@ -45,14 +45,16 @@
 
     <!-- Only if jQuery needed -->
     <script type="text/javascript" src="/js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="/js/master.js"></script>
     <script async type="text/javascript" src="/js/nav.js"></script>
     <script async type="text/javascript" src="/js/dark-mode.js"></script>
+    <script async type="text/javascript" src="/js/finance.js"></script>
 
     <!-- On DOM load -->
     <script>
         $(document).ready(function () {
-            nav.initNavModule($('#body'))
-            darkMode.initDarkModeModule($('#body'))
+            master.initMasterModule($('#body'))
+            finance.initFinanceModule($('#body'))
         })
     </script>
 
@@ -65,90 +67,49 @@
     <!-- ============================================ -->
     <!--                    Header                    -->
     <!-- ============================================ -->
-    <header id="header" class="header">
-        <section class="header-banner">
-            <div class="header-banner-logo">
-                <a aria-label="click to go to home page" href="/index.html">
-                    <!-- TODO: Edit logo image, width can change for landscape image -->
-                    <!--<img aria-hidden="true" src="/images/webtempLogo_256x256.png" decoding="async" alt="logo" height="64" width="64" />-->
-                    LOGO
-                </a>
-            </div>
-            <div class="header-banner-theme">
-                <button id="btnDarkMode" class="button-resetcss material-icons mobile-icons" aria-label="click to change to dark theme" type="button">dark_mode</button>
-                <button id="btnLightMode" class="button-resetcss material-icons mobile-icons" aria-label="click to change to light theme" type="button">light_mode</button>
-            </div>
-            <div class="header-banner-hamburger">
-                <button id="btnNavOpen" class="button-resetcss material-icons mobile-icons" aria-label="click to open menu" type="button">menu</button>
-                <button id="btnNavClose" class="button-resetcss material-icons mobile-icons" aria-label="click to close menu" type="button">close</button>
-            </div>
-        </section>
-        <section id="headerNav" class="header-nav close">
-            <nav>
-                <ul class="header-nav-links">
-                    <li><a class="active" href="/index.html">Home</a>
-                    <li><a href="/finance.html">Finance</a></li>
-                    <li><a href="/index.html">Contact</a></li>
-                </ul>
-            </nav>
-        </section>
-    </header>
+
+    <article id="headercontainer">
+    </article>
 
 
     <!-- ============================================ -->
     <!--                  Main Content                -->
     <!-- ============================================ -->
-    <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. -->
-
 
     <main id="main" class="main">
         <section class="main-landing">
-            <h1>VCortese - Finance</h1>
+            <h1>ParkMasterV - Finance</h1>
             <h2>Tips for those looking to get a hold of finances, live below means, and grow the rest! Your personal Finance Tool.</h2>
-            <!--<a class="main-landing-btn" aria-label="click to call" href="tel:123-456-7890">Call</a>-->
         </section>
         <section class="main-info">
             <h2><span>PERSONAL</span> FINANCE STEPS</h2>
             <div class="main-divider"></div>
             <div class="main-info-card">
                 <h3>Step 1 - Budget</h3>
-                <h4>Tips for those looking to get a hold of finances, live below means, and grow the rest!</h4>
-                <label class="main-switch">Label
-                    <input type="checkbox">
+                <h4>How can we make any improvements if we don't know what is coming in and going out. Create a budget consisting of current income and essential expenses (housing, power, food, transportation). It might help to use tools like <a href="https://www.ynab.com/">YNAB</a>, <a href="https://mint.intuit.com/">Mint</a>, or even Excel/Sheets. Once that number is comfortably positive, we can move on.</h4>
+                <h5>Did you complete your Budget?</h5>
+                <label class="main-switch">
+                    <input id="chkboxStep1" type="checkbox">
                     <span class="switch round"></span>
                 </label>
             </div>
-            <div class="main-info-card">
-                <h3>Second content item</h3>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+            <div id="step2" class="main-info-card close">
+                <h3>Step 2 - Over the Hump</h3>
+                <h4>This is arguably the hardest stage, also the one that will contribute most to significant future growth. First, if your employer offers a retirement match contribute that exact %. Next, we want to eliminate any high interest debt above 7%. That includes ALL credit card debt, which will be easy to maintain since we are cash flow positive. Last is building an emergency fund of 2-4 months expenses within a high interest yielding account. High Yield Savings Accounts, Money Market Accounts, and short term CDs/Treasuries can all work.</h4>
+                <h5>Are you over the hump?</h5>
+                <label class="main-switch">
+                    <input id="chkboxStep2" type="checkbox">
+                    <span class="switch round"></span>
+                </label>
             </div>
-            <div class="main-info-card">
-                <h3>Third content item</h3>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
-            </div>
-        </section>
-        <section class="main-rates">
-            <h2><span>CURRENT</span> RATES</h2>
-            <div class="main-divider"></div>
-            <div class="main-rates-card">
-                <h4>FED:</h4>
-                <h4>4.75%</h4>
-            </div>
-            <div class="main-rates-card">
-                <h4>1 Year T.:</h4>
-                <h4>5.05%</h4>
-            </div>
-            <div class="main-rates-card">
-                <h4>10 Year T.:</h4>
-                <h4>4.10%</h4>
-            </div>
-            <div class="main-rates-card">
-                <h4>HYSA:</h4>
-                <h4>3.65%</h4>
-            </div>
-            <div class="main-rates-card">
-                <h4>Money Market:</h4>
-                <h4>4.25%</h4>
+            <div id="step3" class="main-info-card close">
+                <h3>Step 3 - BBBBB</h3>
+                <h4>werweefwfwfwefwefefweffe</h4>
+                <h5>Are you?</h5>
+                <label class="main-switch">
+                    <input id="chkboxStep3" type="checkbox">
+                    <span class="switch round"></span>
+                </label>
             </div>
         </section>
     </main>
@@ -157,37 +118,9 @@
     <!-- ============================================ -->
     <!--                    Footer                    -->
     <!-- ============================================ -->
-    <footer class="footer">
-        <section class="footer-banner">
-            <div class="footer-banner-item">
-                <h3>Contact</h3>
-                <hr />
-                <ul>
-                    <li><a href="">name@company.org</a></li>
-                    <li><a href="">123-456-7890</a></li>
-                </ul>
-            </div>
-            <div class="footer-banner-item">
-                <h3>Navigation</h3>
-                <hr />
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Testimonials</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-banner-item">
-                <h3>Services</h3>
-                <hr />
-                <ul>
-                    <li><a href="">Service 1</a></li>
-                    <li><a href="">Service 2</a></li>
-                </ul>
-            </div>
-        </section>
-    </footer>
+
+    <article id="footercontainer">
+    </article>
 
 </body>
 </html>

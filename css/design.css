@@ -204,7 +204,10 @@
     .main-info-card h3 h4 {padding: .25rem 0}
     .main-info-card h3 span {color:var(--tertiary)}
     .main-info-card hr {width:66%;}
-    .main-info-card h4 { font-weight:500}
+    .main-info-card h4,
+    .main-info-card h5 {
+        font-weight: 500
+    }
 
 
 .main-rates {

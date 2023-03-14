@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- TODO: Enter Title -->
-    <title>vcortese - Home</title>
+    <title>ParkMasterV - Home</title>
 
     <!-- TODO: Enter actual link-->
     <link rel="canonical" href="https://www.vcortese.github.io/">
@@ -45,14 +45,14 @@
 
     <!-- Only if jQuery needed -->
     <script type="text/javascript" src="/js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="/js/master.js"></script>
     <script async type="text/javascript" src="/js/nav.js"></script>
     <script async type="text/javascript" src="/js/dark-mode.js"></script>
 
     <!-- On DOM load -->
     <script>
         $(document).ready(function () {
-            nav.initNavModule($('#body'))
-            darkMode.initDarkModeModule($('#body'))
+            master.initMasterModule($('#body'))
         })
     </script>
 
@@ -65,34 +65,9 @@
     <!-- ============================================ -->
     <!--                    Header                    -->
     <!-- ============================================ -->
-    <header id="header" class="header">
-        <section class="header-banner">
-            <div class="header-banner-logo">
-                <a aria-label="click to go to home page" href="/index.html">
-                    <!-- TODO: Edit logo image, width can change for landscape image -->
-                    <!--<img aria-hidden="true" src="/images/webtempLogo_256x256.png" decoding="async" alt="logo" height="64" width="64" />-->
-                    LOGO
-                </a>
-            </div>
-            <div class="header-banner-theme">
-                <button id="btnDarkMode" class="button-resetcss material-icons mobile-icons" aria-label="click to change to dark theme" type="button">dark_mode</button>
-                <button id="btnLightMode" class="button-resetcss material-icons mobile-icons" aria-label="click to change to light theme" type="button">light_mode</button>
-            </div>
-            <div class="header-banner-hamburger">
-                <button id="btnNavOpen" class="button-resetcss material-icons mobile-icons" aria-label="click to open menu" type="button">menu</button>
-                <button id="btnNavClose" class="button-resetcss material-icons mobile-icons" aria-label="click to close menu" type="button">close</button>
-            </div>
-        </section>
-        <section id="headerNav" class="header-nav close">
-            <nav>
-                <ul class="header-nav-links">
-                    <li><a class="active" href="/index.html">Home</a>
-                    <li><a href="/finance.html">Finance</a></li>
-                    <li><a href="/index.html">Contact</a></li>
-                </ul>
-            </nav>
-        </section>
-    </header>
+
+    <article id="headercontainer">
+    </article>
 
 
     <!-- ============================================ -->
@@ -103,7 +78,7 @@
 
     <main id="main" class="main">
         <section class="main-landing">
-            <h1>VCortese - Home</h1>
+            <h1>ParkMasterV - Home</h1>
             <h2>This is a personal site containing helpful tools and information pertaining to anything Economics, Finance, and Game Development.</h2>
             <!--<a class="main-landing-btn" aria-label="click to call" href="tel:123-456-7890">Call</a>-->
         </section>
@@ -156,37 +131,10 @@
     <!-- ============================================ -->
     <!--                    Footer                    -->
     <!-- ============================================ -->
-    <footer class="footer">
-        <section class="footer-banner">
-            <div class="footer-banner-item">
-                <h3>Contact</h3>
-                <hr />
-                <ul>
-                    <li><a href="">name@company.org</a></li>
-                    <li><a href="">123-456-7890</a></li>
-                </ul>
-            </div>
-            <div class="footer-banner-item">
-                <h3>Navigation</h3>
-                <hr />
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Testimonials</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-banner-item">
-                <h3>Services</h3>
-                <hr />
-                <ul>
-                    <li><a href="">Service 1</a></li>
-                    <li><a href="">Service 2</a></li>
-                </ul>
-            </div>
-        </section>
-    </footer>
+
+    <article id="footercontainer">
+    </article>
+    
 
 </body>
 </html>
